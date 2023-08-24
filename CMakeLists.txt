@@ -159,7 +159,10 @@ else()
 endif()
 
 
+
+
 add_subdirectory(image_classification_demo)
 add_subdirectory(keypoint_detection_demo)
 add_subdirectory(object_detection_demo)
 add_subdirectory(semantic_segmentation_demo)
+add_subdirectory(model_test)
