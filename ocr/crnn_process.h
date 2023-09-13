@@ -32,7 +32,7 @@ std::vector<std::string> ReadDict(std::string path);
 
 cv::Mat GetRotateCropImage(cv::Mat srcimage, std::vector<std::vector<int>> box);
 
-template <class ForwardIterator>
+template<class ForwardIterator>
 inline size_t Argmax(ForwardIterator first, ForwardIterator last) {
-  return std::distance(first, std::max_element(first, last));
+    return std::distance(first, std::max_element(first, last));
 }

@@ -25,12 +25,13 @@
 #include "opencv2/imgcodecs.hpp"
 #include "opencv2/imgproc.hpp"
 
-template <class T> T clamp(T x, T min, T max) {
-  if (x > max)
-    return max;
-  if (x < min)
-    return min;
-  return x;
+template<class T>
+T clamp(T x, T min, T max) {
+    if (x > max)
+        return max;
+    if (x < min)
+        return min;
+    return x;
 }
 
 std::vector<std::vector<float>> Mat2Vector(cv::Mat mat);
